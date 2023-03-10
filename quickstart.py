@@ -36,7 +36,7 @@ def postFB(row,postNumber):
     for j in range(2,7):
         if(row[j] != "None"):
             info = info + row[j] + " "
-    msg = "#"+str(postNumber)+ "\n" + info + "\n" + '"'+ row[1] + ' ' + '"' 
+    msg = "#"+str(postNumber)+ " " + info + "\n" + '"'+ row[1] + ' ' + '"' 
     payload =  {'message' :msg, 'access_token': AccessToken}
     requests.post(post_url,data=payload)
 
