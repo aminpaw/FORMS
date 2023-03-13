@@ -103,7 +103,7 @@ def main():
                         valueInputOption = 'USER_ENTERED',
                         body=body).execute()
             print("RUNNING...")
-            time.sleep(60)
+            time.sleep(600)
         except HttpError as err:
             print(err)
 
